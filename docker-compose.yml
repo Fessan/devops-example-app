@@ -3,7 +3,7 @@ version: '3'
 services:
   app:
     build: .
-    image: hexletcomponents/devops-example-app
+    image: navyfessan/devops-example-app
   caddy:  # Веб-сервер
     build:  # Находится внутри services/caddy
       context: .

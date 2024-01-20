@@ -1,4 +1,4 @@
-localhost {
+localhost, fessan.ru {
 	tls internal
 
 	handle /images/* {
