@@ -9,7 +9,7 @@
         name: devops-example
     - community.docker.docker_container:
         name: app  # имя используется как домен
-        image: navyfessan/devops-example-app:{{ version }}
+        image: navyfessan/devops-example-app
         restart_policy: always
         state: started
         networks:  # Добавляем контейнер в сеть
@@ -20,7 +20,7 @@
           NODE_ENV: production
     - community.docker.docker_container:
         name: caddy  # имя используется как домен
-        image: navyfessan/devops-example-caddy:{{ version }}
+        image: navyfessan/devops-example-caddy
         restart_policy: always
         state: started
         networks:  # Добавляем контейнер в сеть
