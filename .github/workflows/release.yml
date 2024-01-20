@@ -4,8 +4,7 @@ on:
   create:
     tags: [v*]
 env:
-  APP_IMAGE_NAME: hexletcomponents/devops-example-app
-  CADDY_IMAGE_NAME: hexletcomponents/devops-example-caddy
+  APP_IMAGE_NAME: navyfessan/devops-example-app
 jobs:
   docker:
     runs-on: ubuntu-latest

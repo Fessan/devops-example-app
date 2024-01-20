@@ -4,3 +4,9 @@ services:
   app:
     build: .
     image: hexletcomponents/devops-example-app
+  caddy:  # Веб-сервер
+    build:  # Находится внутри services/caddy
+      context: .
+      dockerfile: services/caddy/Dockerfile
+    volumes: [.:/app, ./services/caddy/Caddyfile:/etc/caddy/Caddyfile]
+    ports: [80:80, 443:443]

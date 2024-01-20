@@ -7,7 +7,7 @@
   # который становится dns именем
     - community.docker.docker_container:
         name: app  # имя используется как домен
-        image: hexletcomponents/devops-example-app:{{ version }}
+        image: navyfessan/devops-example-app:{{ version }}
         restart_policy: always
         state: started
         ports: [3000:3000]
