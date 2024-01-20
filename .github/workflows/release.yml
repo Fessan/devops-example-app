@@ -4,7 +4,7 @@ on:
   create:
     tags: [v*]
 env:
-  APP_IMAGE_NAME: navyfessan/devops-example-app
+  APP_IMAGE_NAME: navyfessan/devops-example-caddy
 jobs:
   docker:
     runs-on: ubuntu-latest
